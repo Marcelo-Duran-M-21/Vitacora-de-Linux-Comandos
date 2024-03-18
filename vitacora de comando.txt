@@ -1,0 +1,487 @@
+﻿Vitacora de comando en linux
+
+
+Claro, aquí te proporciono más comandos en Linux junto con su significado o para qué sirven en un formato de dos columnas:
+
+
+```
+find                  Busca archivos y directorios en un sistema de archivos.
+locate                Encuentra la ubicación de archivos en la base de datos de búsqueda.
+grep                  Busca patrones en archivos de texto.
+sed                   Editor de flujo para transformar texto.
+awk                   Procesador de patrones y acciones para archivos de texto.
+echo                  Muestra texto en la salida estándar.
+less                  Permite visualizar el contenido de archivos de texto de manera paginada.
+more                  Similar a 'less', permite ver archivos de texto de manera paginada.
+wc                    Cuenta líneas, palabras y caracteres en archivos de texto.
+head                  Muestra las primeras líneas de un archivo.
+tail                  Muestra las últimas líneas de un archivo.
+tar                   Crea o extrae archivos comprimidos en formato .tar.
+gzip                  Comprime archivos en formato .gz.
+gunzip                Descomprime archivos comprimidos en formato .gz.
+zip                   Comprime archivos en formato .zip.
+unzip                 Descomprime archivos comprimidos en formato .zip.
+ssh                   Inicia una sesión segura de shell en un servidor remoto.
+scp                   Copia archivos de forma segura entre sistemas.
+rsync                 Sincroniza archivos y directorios entre sistemas.
+chmod                 Cambia los permisos de archivos.
+chown                 Cambia el propietario de archivos.
+du                    Muestra el espacio en disco utilizado por archivos y directorios.
+df                    Muestra el espacio en disco utilizado y disponible.
+ps                    Muestra procesos en ejecución.
+top                   Muestra la actividad del sistema y los procesos en ejecución.
+kill                  Detiene procesos en ejecución.
+reboot                Reinicia el sistema.
+shutdown              Apaga o reinicia el sistema de forma programada.
+passwd                Cambia la contraseña de usuario.
+useradd               Crea un nuevo usuario.
+userdel               Elimina un usuario.
+groupadd              Crea un nuevo grupo de usuarios.
+groupdel              Elimina un grupo de usuarios.
+ifconfig              Muestra y configura interfaces de red.
+ping                  Verifica la conectividad con un host remoto.
+traceroute            Muestra la ruta que toman los paquetes hacia un host remoto.
+netstat               Muestra estadísticas de red y conexiones.
+iptables              Configura reglas de firewall.
+crontab               Administra tareas programadas.
+history               Muestra el historial de comandos utilizados.
+man                   Muestra el manual de un comando.
+```
+Comando y sus variaciones 
+1. **ls** (Listar archivos y directorios)
+   - `ls -l`: Lista archivos y directorios en formato largo.
+   - `ls -a`: Muestra todos los archivos, incluidos los ocultos.
+   - `ls -h`: Muestra tamaños de archivos en formato legible para humanos.
+   - `ls -t`: Ordena los archivos por fecha de modificación.
+
+
+2. **cd** (Cambiar de directorio)
+   - `cd ~`: Cambia al directorio de inicio del usuario.
+   - `cd ..`: Retrocede un nivel en el árbol de directorios.
+   - `cd /ruta/directorio`: Cambia al directorio especificado por la ruta.
+
+
+3. **cp** (Copiar archivos y directorios)
+   - `cp archivo.txt carpeta_destino`: Copia un archivo a una carpeta específica.
+   - `cp -r directorio_origen carpeta_destino`: Copia un directorio y su contenido a otra ubicación.
+
+
+4. **mv** (Mover o renombrar archivos y directorios)
+   - `mv archivo.txt nuevo_nombre.txt`: Renombra un archivo.
+   - `mv archivo.txt carpeta_destino`: Mueve un archivo a otra carpeta.
+   - `mv directorio_origen directorio_destino`: Mueve un directorio y su contenido a otra ubicación.
+
+
+5. **rm** (Eliminar archivos y directorios)
+   - `rm archivo.txt`: Elimina un archivo.
+   - `rm -r directorio`: Elimina un directorio y su contenido de forma recursiva.
+   - `rm -f archivo.txt`: Elimina un archivo sin solicitar confirmación.
+
+
+6. **mkdir** (Crear directorios)
+   - `mkdir nuevo_directorio`: Crea un nuevo directorio en la ubicación actual.
+   - `mkdir -p ruta/completa/nuevo_directorio`: Crea directorios anidados en la ruta especificada.
+
+
+7. **grep** (Buscar patrones en archivos)
+   - `grep "patrón" archivo.txt`: Busca un patrón específico en un archivo de texto.
+   - `grep -r "patrón" directorio`: Busca un patrón en todos los archivos de un directorio de forma recursiva.
+
+
+8. **chmod** (Cambiar permisos de archivos)
+   - `chmod +x archivo`: Otorga permisos de ejecución al archivo.
+   - `chmod 644 archivo`: Establece permisos específicos (lectura y escritura para el propietario, solo lectura para otros).
+
+
+9. **chown** (Cambiar propietario de archivos)
+   - `chown nuevo_propietario archivo`: Cambia el propietario de un archivo.
+   - `chown -R nuevo_propietario:direccion directorio`: Cambia el propietario y el grupo de un directorio y su contenido.
+
+
+10. **tar** (Crear o extraer archivos comprimidos en formato .tar)
+    - `tar -cvf archivo.tar archivos`: Crea un archivo .tar a partir de una lista de archivos.
+    - `tar -xvf archivo.tar`: Extrae el contenido de un archivo .tar.
+
+
+comandos para manejo de packetes
+
+
+1. **apt-get** (Advanced Package Tool - gestor de paquetes en sistemas basados en Debian)
+   - `apt-get update`: Actualiza la lista de paquetes disponibles.
+   - `apt-get upgrade`: Actualiza todos los paquetes instalados.
+   - `apt-get install nombre_paquete`: Instala un paquete específico.
+   - `apt-get remove nombre_paquete`: Desinstala un paquete.
+   - `apt-get autoremove`: Elimina paquetes huérfanos (sin dependencias).
+   - `apt-get clean`: Elimina los archivos de caché descargados.
+
+
+2. **apt** (versión más reciente de apt-get, disponible en sistemas Debian y Ubuntu a partir de Debian 9 y Ubuntu 16.04)
+   - `apt update`: Actualiza la lista de paquetes disponibles.
+   - `apt upgrade`: Actualiza todos los paquetes instalados.
+   - `apt install nombre_paquete`: Instala un paquete específico.
+   - `apt remove nombre_paquete`: Desinstala un paquete.
+   - `apt autoremove`: Elimina paquetes huérfanos (sin dependencias).
+   - `apt clean`: Elimina los archivos de caché descargados.
+
+
+3. **yum** (Yellowdog Updater Modified - gestor de paquetes en sistemas basados en Red Hat)
+   - `yum update`: Actualiza todos los paquetes instalados.
+   - `yum install nombre_paquete`: Instala un paquete específico.
+   - `yum remove nombre_paquete`: Desinstala un paquete.
+   - `yum search término`: Busca paquetes que coincidan con el término especificado.
+   - `yum info nombre_paquete`: Muestra información detallada sobre un paquete.
+
+
+4. **dnf** (Dandified Yum - gestor de paquetes en sistemas Fedora a partir de Fedora 18)
+   - `dnf update`: Actualiza todos los paquetes instalados.
+   - `dnf install nombre_paquete`: Instala un paquete específico.
+   - `dnf remove nombre_paquete`: Desinstala un paquete.
+   - `dnf search término`: Busca paquetes que coincidan con el término especificado.
+   - `dnf info nombre_paquete`: Muestra información detallada sobre un paquete.
+
+
+5. **zypper** (gestor de paquetes en sistemas openSUSE y SUSE Linux Enterprise)
+   - `zypper update`: Actualiza todos los paquetes instalados.
+   - `zypper install nombre_paquete`: Instala un paquete específico.
+   - `zypper remove nombre_paquete`: Desinstala un paquete.
+   - `zypper search término`: Busca paquetes que coincidan con el término especificado.
+   - `zypper info nombre_paquete`: Muestra información detallada sobre un paquete.
+
+
+
+
+
+
+comandos para Manejo de archivos 
+
+
+
+
+1. **apt-get** (Advanced Package Tool - gestor de paquetes en sistemas basados en Debian)
+   - `apt-get update`: Actualiza la lista de paquetes disponibles.
+   - `apt-get upgrade`: Actualiza todos los paquetes instalados.
+   - `apt-get install nombre_paquete`: Instala un paquete específico.
+   - `apt-get remove nombre_paquete`: Desinstala un paquete.
+   - `apt-get autoremove`: Elimina paquetes huérfanos (sin dependencias).
+   - `apt-get clean`: Elimina los archivos de caché descargados.
+
+
+2. **apt** (versión más reciente de apt-get, disponible en sistemas Debian y Ubuntu a partir de Debian 9 y Ubuntu 16.04)
+   - `apt update`: Actualiza la lista de paquetes disponibles.
+   - `apt upgrade`: Actualiza todos los paquetes instalados.
+   - `apt install nombre_paquete`: Instala un paquete específico.
+   - `apt remove nombre_paquete`: Desinstala un paquete.
+   - `apt autoremove`: Elimina paquetes huérfanos (sin dependencias).
+   - `apt clean`: Elimina los archivos de caché descargados.
+
+
+3. **yum** (Yellowdog Updater Modified - gestor de paquetes en sistemas basados en Red Hat)
+   - `yum update`: Actualiza todos los paquetes instalados.
+   - `yum install nombre_paquete`: Instala un paquete específico.
+   - `yum remove nombre_paquete`: Desinstala un paquete.
+   - `yum search término`: Busca paquetes que coincidan con el término especificado.
+   - `yum info nombre_paquete`: Muestra información detallada sobre un paquete.
+
+
+4. **dnf** (Dandified Yum - gestor de paquetes en sistemas Fedora a partir de Fedora 18)
+   - `dnf update`: Actualiza todos los paquetes instalados.
+   - `dnf install nombre_paquete`: Instala un paquete específico.
+   - `dnf remove nombre_paquete`: Desinstala un paquete.
+   - `dnf search término`: Busca paquetes que coincidan con el término especificado.
+   - `dnf info nombre_paquete`: Muestra información detallada sobre un paquete.
+
+
+5. **zypper** (gestor de paquetes en sistemas openSUSE y SUSE Linux Enterprise)
+   - `zypper update`: Actualiza todos los paquetes instalados.
+   - `zypper install nombre_paquete`: Instala un paquete específico.
+   - `zypper remove nombre_paquete`: Desinstala un paquete.
+   - `zypper search término`: Busca paquetes que coincidan con el término especificado.
+   - `zypper info nombre_paquete`: Muestra información detallada sobre un paquete.
+
+
+comando para configuracion y gestion de redes 
+
+
+Aquí te presento una lista de comandos relacionados con la configuración y gestión de 
+
+
+
+
+redes en sistemas Linux, junto con sus variaciones más comunes:
+
+
+1. **ifconfig** (Interface Configuration - muestra y configura interfaces de red)
+   - `ifconfig`: Muestra información detallada sobre todas las interfaces de red.
+   - `ifconfig nombre_interfaz`: Muestra información específica de una interfaz de red.
+   - `ifconfig nombre_interfaz dirección_ip netmask mascara`: Configura la dirección IP y la máscara de red de una interfaz.
+   - `ifconfig nombre_interfaz down`: Desactiva una interfaz de red.
+   - `ifconfig nombre_interfaz up`: Activa una interfaz de red.
+
+
+2. **ip** (Gestión avanzada de configuración de red)
+   - `ip addr show`: Muestra información detallada sobre las interfaces de red y sus direcciones IP.
+   - `ip addr add dirección_ip/máscara dev nombre_interfaz`: Asigna una dirección IP a una interfaz de red.
+   - `ip addr del dirección_ip/máscara dev nombre_interfaz`: Elimina una dirección IP de una interfaz de red.
+   - `ip link set nombre_interfaz down`: Desactiva una interfaz de red.
+   - `ip link set nombre_interfaz up`: Activa una interfaz de red.
+   - `ip route show`: Muestra la tabla de enrutamiento del sistema.
+   - `ip route add red/máscara via gateway`: Agrega una ruta estática a la tabla de enrutamiento.
+   - `ip route del red/máscara`: Elimina una ruta estática de la tabla de enrutamiento.
+
+
+3. **ping** (Verificar conectividad de red)
+   - `ping dirección_ip`: Envía paquetes ICMP a una dirección IP para verificar la conectividad.
+   - `ping -c número dirección_ip`: Envía un número específico de paquetes ICMP a una dirección IP.
+   - `ping -i intervalo dirección_ip`: Especifica un intervalo de tiempo entre los paquetes ICMP enviados.
+   - `ping -s tamaño dirección_ip`: Especifica el tamaño del paquete ICMP enviado.
+
+
+4. **traceroute** (Seguir la ruta de los paquetes hacia un host)
+   - `traceroute dirección_ip`: Muestra la ruta que siguen los paquetes para llegar a una dirección IP.
+   - `traceroute -n dirección_ip`: Muestra la ruta sin resolver los nombres de host a direcciones IP.
+   - `traceroute -q número dirección_ip`: Especifica el número de consultas enviadas por salto.
+
+
+5. **netstat** (Mostrar estadísticas de red y conexiones)
+   - `netstat -tuln`: Muestra todas las conexiones TCP y UDP activas y los puertos escuchando.
+   - `netstat -r`: Muestra la tabla de enrutamiento del sistema.
+   - `netstat -i`: Muestra estadísticas detalladas de las interfaces de red.
+
+
+6. **iptables** (Configuración de firewall)
+   - `iptables -L`: Lista todas las reglas del firewall.
+   - `iptables -A INPUT -p protocolo --dport puerto -j ACCEPT`: Agrega una regla para permitir tráfico entrante en un puerto específico.
+   - `iptables -A OUTPUT -p protocolo --sport puerto -j ACCEPT`: Agrega una regla para permitir tráfico saliente desde un puerto específico.
+   - `iptables -A INPUT -s dirección_ip -j DROP`: Agrega una regla para bloquear tráfico proveniente de una dirección IP específica.
+
+
+
+
+comandos en ubuntu .
+
+
+
+
+1. **ifconfig** (Configuración de interfaces de red)
+   - `ifconfig`: Muestra la configuración de todas las interfaces de red.
+   - `ifconfig nombre_interfaz`: Muestra la configuración de una interfaz de red específica.
+   - `ifconfig nombre_interfaz dirección_ip netmask máscara`: Configura la dirección IP y la máscara de red de una interfaz.
+   - `ifconfig nombre_interfaz up/down`: Activa o desactiva una interfaz de red.
+
+
+2. **ip** (Herramienta más moderna para la configuración de red)
+   - `ip address show`: Muestra la configuración de todas las interfaces de red.
+   - `ip address add dirección_ip/máscara dev nombre_interfaz`: Configura la dirección IP de una interfaz.
+   - `ip address del dirección_ip/máscara dev nombre_interfaz`: Elimina la dirección IP de una interfaz.
+   - `ip link set nombre_interfaz up/down`: Activa o desactiva una interfaz de red.
+
+
+3. **netplan** (Configuración de red en Ubuntu 18.04 y versiones posteriores)
+   - `sudo netplan apply`: Aplica la configuración de red definida en los archivos YAML de Netplan.
+   - `sudo netplan generate`: Genera el archivo de configuración de red a partir de los archivos YAML.
+   - `sudo netplan --debug apply`: Aplica la configuración con información de depuración.
+
+
+4. **nmcli** (Network Manager Command Line Interface - gestión de red mediante NetworkManager)
+   - `nmcli device show`: Muestra información sobre todas las interfaces de red.
+   - `nmcli connection show`: Muestra información sobre las conexiones de red configuradas.
+   - `nmcli connection add type ethernet ifname nombre_interfaz`: Crea una nueva conexión Ethernet.
+   - `nmcli connection add type wifi con-name nombre_conexión ifname nombre_interfaz ssid nombre_wifi`: Crea una nueva conexión WiFi.
+   - `nmcli connection modify nombre_conexión wifi-sec.key-mgmt wpa-psk`: Configura la seguridad de una conexión WiFi.
+
+
+5. **iwconfig** (Configuración de adaptadores inalámbricos)
+   - `iwconfig`: Muestra la configuración de los adaptadores inalámbricos.
+   - `iwconfig nombre_interfaz essid nombre_red`: Configura el nombre de la red (ESSID) en una interfaz inalámbrica.
+   - `iwconfig nombre_interfaz mode modo`: Configura el modo de operación de una interfaz inalámbrica (por ejemplo, ad-hoc, managed, monitor).
+
+
+6. **ping** (Prueba de conectividad)
+   - `ping dirección_ip`: Envía paquetes ICMP a una dirección IP para verificar la conectividad.
+   - `ping -c número dirección_ip`: Envía un número específico de paquetes ICMP a una dirección IP.
+   - `ping -i intervalo dirección_ip`: Especifica un intervalo de tiempo entre los paquetes ICMP enviados.
+
+
+7. **traceroute** (Seguimiento de la ruta de los paquetes)
+   - `traceroute dirección_ip`: Muestra la ruta que siguen los paquetes para llegar a una dirección IP.
+   - `traceroute -n dirección_ip`: Muestra la ruta sin resolver los nombres de host a direcciones IP.
+   - `traceroute -q número dirección_ip`: Especifica el número de consultas enviadas por salto.
+
+
+8. **netstat** (Estadísticas de red y conexiones)
+   - `netstat -tuln`: Muestra todas las conexiones TCP y UDP activas y los puertos escuchando.
+   - `netstat -r`: Muestra la tabla de enrutamiento del sistema.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+comandos para manejo de usuarios
+
+
+
+
+1. **useradd** (Agregar usuarios)
+   - `useradd nombre_usuario`: Crea un nuevo usuario con el nombre especificado.
+   - `useradd -m nombre_usuario`: Crea un nuevo usuario y también crea su directorio de inicio.
+   - `useradd -s /bin/bash nombre_usuario`: Especifica el shell por defecto del nuevo usuario.
+
+
+2. **userdel** (Eliminar usuarios)
+   - `userdel nombre_usuario`: Elimina un usuario específico.
+   - `userdel -r nombre_usuario`: Elimina un usuario y también borra su directorio de inicio y archivos asociados.
+
+
+3. **passwd** (Cambiar contraseña de usuario)
+   - `passwd nombre_usuario`: Cambia la contraseña del usuario especificado.
+   - `passwd`: Cambia la contraseña del usuario actual (requiere privilegios de superusuario).
+
+
+4. **usermod** (Modificar atributos de usuario)
+   - `usermod -l nuevo_nombre_usuario nombre_usuario`: Cambia el nombre de usuario.
+   - `usermod -d nueva_ruta directorio_inicio_usuario`: Cambia la ruta del directorio de inicio de un usuario.
+   - `usermod -s /bin/sh nombre_usuario`: Cambia el shell por defecto del usuario.
+   - `usermod -G grupo_primario nombre_usuario`: Cambia el grupo primario del usuario.
+   - `usermod -aG grupo_secundario nombre_usuario`: Agrega un usuario a un grupo secundario.
+
+
+5. **groups** (Mostrar grupos a los que pertenece un usuario)
+   - `groups nombre_usuario`: Muestra todos los grupos a los que pertenece el usuario especificado.
+
+
+6. **who** y **w** (Mostrar usuarios conectados)
+   - `who`: Muestra una lista de usuarios conectados al sistema.
+   - `w`: Muestra información detallada sobre los usuarios conectados, incluyendo tiempos de actividad y comandos ejecutados.
+
+
+7. **su** (Cambiar de usuario)
+   - `su nombre_usuario`: Inicia una sesión como el usuario especificado.
+   - `su - nombre_usuario`: Inicia una sesión como el usuario especificado con su entorno de inicio.
+
+
+8. **sudo** (Ejecutar comandos con privilegios de superusuario)
+   - `sudo comando`: Ejecuta un comando con privilegios de superusuario.
+   - `sudo -u usuario_como_ejecutar comando`: Ejecuta un comando como otro usuario específico.
+
+
+9. **chown** (Cambiar propietario de archivos/directorios)
+   - `chown nuevo_propietario archivo_o_directorio`: Cambia el propietario de un archivo o directorio.
+   - `chown -R nuevo_propietario:direccion archivo_o_directorio`: Cambia el propietario y el grupo de un archivo o directorio de forma recursiva.
+
+
+10. **chgrp** (Cambiar grupo de archivos/directorios)
+    - `chgrp nuevo_grupo archivo_o_directorio`: Cambia el grupo de un archivo o directorio.
+
+
+comandos para administración de grupos 
+
+
+1. **groupadd** (Crear grupos)
+   - `groupadd nombre_grupo`: Crea un nuevo grupo con el nombre especificado.
+   - `groupadd -g ID_grupo nombre_grupo`: Crea un nuevo grupo con un ID específico.
+
+
+2. **groupdel** (Eliminar grupos)
+   - `groupdel nombre_grupo`: Elimina un grupo específico.
+
+
+3. **groupmod** (Modificar atributos de grupo)
+   - `groupmod -n nuevo_nombre_grupo nombre_grupo`: Cambia el nombre de un grupo.
+   - `groupmod -g nuevo_ID_grupo nombre_grupo`: Cambia el ID de un grupo.
+   - `groupmod -A usuario_administrador nombre_grupo`: Establece un usuario como administrador del grupo.
+   - `groupmod -M usuario1,usuario2 nombre_grupo`: Establece la lista de miembros del grupo.
+
+
+4. **gpasswd** (Administrar contraseñas de grupo)
+   - `gpasswd nombre_grupo`: Permite administrar contraseñas de grupos.
+   - `gpasswd -a nombre_usuario nombre_grupo`: Agrega un usuario al grupo.
+   - `gpasswd -d nombre_usuario nombre_grupo`: Elimina un usuario del grupo.
+   - `gpasswd -A nombre_usuario nombre_grupo`: Establece un administrador del grupo.
+
+
+5. **groups** (Mostrar grupos de un usuario)
+   - `groups nombre_usuario`: Muestra todos los grupos a los que pertenece un usuario.
+
+
+6. **id** (Mostrar información de usuario y grupos)
+   - `id nombre_usuario`: Muestra información detallada sobre el usuario, incluidos los grupos a los que pertenece.
+
+
+7. **newgrp** (Cambiar de grupo principal)
+   - `newgrp nombre_grupo`: Cambia el grupo principal del usuario al grupo especificado.
+
+
+8. **chown** (Cambiar propietario de archivos/directorios)
+   - `chown :nuevo_grupo archivo_o_directorio`: Cambia el grupo de un archivo o directorio.
+
+
+
+
+Apuntes de Comandos en Clase:
+Vitacora comandos  [15/03/24]
+CHMOD
+CHGRP
+CHOWN
+Comando gestión de usuario
+*Passwd  [username] gestión de contraseñas
+-S con eso vemos la fecha de user fecha de caducacion
+*useradd:                
+*Adduser:              agrega usuario por defecto malo
+Como cambiamos el user juan a jhon
+*Usermod:              
+*userdel:                borrar todo del usuario
+Antes de crear cuenta de usuarios es crear grupos y definir roles
+*group add
+*groupmod
+*groudel
+*groups
+ 
+ADMINUSERS
+ 
+-        Permisos
+-        2**2 = 4   r
+-        2**1= 2    w
+-        2**0= 1    x
+7
+644
+DRWZR-X—X
+CHMOD 751 LOG.TXT
+Comando con bits extendido para dar privilegios a mi user addmod cambia permiso del kernel
+Cambiar al log.txt solo tenga permiso para el grupo y propietario
+Chmod 714
+Chmod u+x;g-r;o+x
+Quitar to
+Chmod a-rwx:
+Borra todo y solo pone al user execution
+Otro chmod u=x
+Ayuda de comandos
+Main del sistema
+ 
+Comandos de administración de packetes  investigar
+Dpkg es comando nativo de debian y ubunto para administrar localmente
+dpkg –list ! grep ‘ssh’ para ver como 
+expresiones regulares archivo  ‘**root’ . cualquier caracter individual
+* cualquier caracter especifico
+[**] cualquier qno es especifico 
+*primer en el patron
+-
+$ dolar si es el ultimo caracter del patron
+
+
+
+
+Apt -get   aptitude para administrar desde los repos
+ 
+Como saber que versión de intslador tenemos 
+
+
+investigar no login con el shell
